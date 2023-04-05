@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Radio Button</title>
+    </head>
+
+    <body>
+        <h2>Pilih Paket Langganan:</h2>
+        <input type="radio" name="subscription" value="100000">Paket Silver (Rp100,000/bulan)<br>
+        <input type="radio" name="subscription" value="150000">Paket Gold (Rp150,000/bulan)<br>
+        <input type="radio" name="subscription" value="200000">Paket Platinum (Rp200,000/bulan)<br>
+        <input type="button" value="Hitung" onclick="calculateTotal()"><br>
+        <span id="total"></span>
+
+        <script>
+            function calculateTotal() {
+                let radioButtons = document.getElementsByName("subscription");
+                let selectedValue = 0;
+    
+                for (let i = 0; i < radioButtons.length; i++) {
+                    if (radioButtons[i].checked) {
+                        selectedValue = parseInt(radioButtons[i].value);
+                        break;
+                    }
+                }
+    
+                let total = selectedValue * 12;
+                document.getElementById("total").innerHTML = "Total biaya (12 Bulan): Rp" + total;
+            }
+        </script>
+    </body>
+</html>

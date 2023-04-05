@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Get the Parent Element</title>
+    </head>
+    <body>
+        <p>List :</p>
+        <ul>
+            <li id="myLI">Kopi</li>
+            <li>Teh</li>
+        </ul>
+        <p>Klik tombol untuk mendapatkan node name dari parent node dari elemen li dalam daftar.</p>
+        <button onclick="myFunction()">Click</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLI").parentNode.nodeName;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>

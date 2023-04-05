@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>getAttribute</title>
+    </head>
+
+    <body>
+        <h1 id="judul" class="warna-merah">Ini adalah judul</h1>
+        <p id="paragraf">Ini adalah paragraf</p>
+      
+        <script>
+            const judul = document.getElementById("judul");
+            const idJudul = judul.getAttribute("id");
+            console.log("ID Judul: " + idJudul);
+        
+            const classJudul = judul.getAttribute("class");
+            console.log("Class Judul: " + classJudul);
+        
+            const paragraf = document.getElementById("paragraf");
+            const idParagraf = paragraf.getAttribute("id");
+            console.log("ID Paragraf: " + idParagraf);
+        </script>
+    </body>
+</html>

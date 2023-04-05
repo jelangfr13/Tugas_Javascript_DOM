@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Checkbox</title>
+    </head>
+    
+    <body>
+        <label for="feature">Aktifkan Fitur:</label>
+        <input type="checkbox" id="feature" name="feature" onclick="toggleFeature()">
+
+        <script>
+            function toggleFeature() {
+            var feature = document.getElementById("feature");
+                if (feature.checked == true) {
+                    console.log("Fitur Sudah Aktif")
+                } else {
+                    console.log("Fitur Sudah Nonaktif")
+                }
+            }
+        </script>
+    </body>
+</html>

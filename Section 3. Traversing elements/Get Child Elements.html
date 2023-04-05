@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Get Child Elements</title>
+    </head>
+    <body>
+        <p>List:</p>
+        <ul id="myList">
+            <li>Kopi</li>
+            <li>Teh</li>
+        </ul>
+        <p>Klik untuk mendapatkan first child node dari list.</p>
+        <button onclick="myFunction()">Click</button>
+        
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                var list = document.getElementById("myList").firstElementChild.innerHTML.trim();
+                document.getElementById("demo").innerHTML = list;
+            }
+        </script>
+    </body>
+</html>

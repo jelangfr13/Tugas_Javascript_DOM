@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+
+    <body>
+        <img id="gambar" src="https://github.com/jelangfr13/PersonalWebsite/blob/main/assets/UpCycle.png?raw=true" alt="Gambar" style="max-width: 500px;">
+        <p id="keterangan">Klik dan tahan pada gambar untuk melihat interaksi</p>
+
+        <script>
+        var gambar = document.getElementById("gambar");
+        var keterangan = document.getElementById("keterangan");
+
+        gambar.addEventListener("mousedown", function() {
+            keterangan.innerHTML = "Ini adalah gambar banner UpCycle";
+        });
+
+        gambar.addEventListener("mouseup", function() {
+            keterangan.innerHTML = "Klik dan tahan pada gambar untuk melihat interaksi";
+        });
+        </script>
+    </body>
+</html>

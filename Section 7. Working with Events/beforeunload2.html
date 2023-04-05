@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>beforeunload2</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="submit">Masuk</button>
+        </form>
+        
+        <script>
+            window.addEventListener('beforeunload', function (event) {
+                event.preventDefault();
+                if (document.getElementById('username').value || document.getElementById('password').value) {
+                    event.returnValue = 'Data yang belum disimpan akan hilang. Apakah Anda yakin ingin keluar dari halaman ini?';
+                }
+            });
+        </script>
+    </body>
+</html>

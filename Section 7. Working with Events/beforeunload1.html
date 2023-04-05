@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>beforeunload1</title>
+    </head>
+
+    <body>
+        <h1>Selamat datang di dunia tak selamanya indah :)</h1>
+        <p>Jika anda mereload page ini, akan muncul notifikasi peringatan untuk konfirmasi.</p>
+        
+        <script>
+            window.addEventListener('beforeunload', function (event) {
+                event.preventDefault();
+                event.returnValue = '';
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>setAttribute</title>
+    </head>
+
+    <body>
+        <button id="btn" onclick="changeText()">Klik Tombol</button>
+
+        <script>
+            function changeText() {
+                var btn = document.getElementById("btn");
+                btn.setAttribute("style", "color: red; font-weight: bold;");
+                btn.innerHTML = "Tombol Sudah Berubah!";
+            }
+        </script>
+    </body>
+</html>

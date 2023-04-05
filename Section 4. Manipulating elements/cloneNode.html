@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>cloneNode</title>
+    </head>
+
+    <body>
+        <div id="original">
+            <h1>Jelang Fikri Ramadhan</h1>
+          </div>
+          
+          <button onclick="clone()">Clone</button>
+          
+          <div id="clone"></div>          
+    <script>
+        function clone() {
+            var original = document.getElementById("original");
+            var clone = original.cloneNode(true);
+            clone.setAttribute("id", "clone");
+            document.getElementById("clone").appendChild(clone);
+        }
+    </script>
+</html>

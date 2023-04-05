@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>style property</title>
+    </head>
+
+    <body>
+        <h1 id="judul">Jelang Fikri Ramadhan</h1>
+        <p id="paragraf">Skilvul #Tech4Impact Kampus Merdeka Cycle 4: Front-End Web Development</p>
+      
+        <button onclick="ubahStyle()">Ubah Gaya</button>
+      
+        <script>
+          function ubahStyle() {
+            var elemenJudul = document.getElementById("judul");
+            var elemenParagraf = document.getElementById("paragraf");
+      
+            elemenJudul.style.color = "blue";
+            elemenParagraf.style.backgroundColor = "yellow";
+            elemenParagraf.style.padding = "20px";
+          }
+        </script>
+    </body>
+</html>

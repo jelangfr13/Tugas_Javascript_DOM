@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>getElementsByTagName</title>
+	</head>
+	<body>
+		<h1>Jelang</h1>
+		<h1>Fikri</h1>
+		<h1>Ramadhan</h1>
+
+		<script>
+			var paragraphs = document.getElementsByTagName("h1");
+
+			for (var i = 0; i < paragraphs.length; i++) {
+			paragraphs[i].style.color = "red";
+			}
+		</script>
+	</body>
+</html>

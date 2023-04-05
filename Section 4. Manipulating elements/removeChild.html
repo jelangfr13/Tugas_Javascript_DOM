@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>removeChild</title>
+    </head>
+    
+    <body>
+        <ul id="myList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+        <p>Klik 2x untuk menghapus salah satu list di atas</p>
+        <button onclick="removeListItem()">Remove Item</button>
+    </body>
+    <script>
+        function removeListItem() {
+            var list = document.getElementById("myList");
+            list.removeChild(list.childNodes[0]);
+        }
+    </script>
+</html>

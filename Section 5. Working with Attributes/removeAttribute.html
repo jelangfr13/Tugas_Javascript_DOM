@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>removeAttribute</title>
+    </head>
+
+    <body>
+        <h1 id="judul" style="color: red;">Jelang Fikri Ramadhan</h1>
+        <p>
+            Klik tombol di bawah ini untuk menghapus atribut "style" dari elemen di atas.
+        </p>
+        <button onclick="hapusAtribut()">Hapus Atribut</button>
+    
+        <script>
+            function hapusAtribut() {
+                var judul = document.getElementById("judul");
+                judul.removeAttribute("style");
+            }
+        </script>
+    </body>
+</html>

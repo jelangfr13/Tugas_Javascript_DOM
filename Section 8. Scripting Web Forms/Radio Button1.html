@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Radio Button</title>
+    </head>
+
+    <body>
+        <h2>Pilih Jenis Kelamin:</h2>
+        <input type="radio" name="gender" value="laki-laki">Laki-laki<br>
+        <input type="radio" name="gender" value="perempuan">Perempuan<br>
+        <input type="button" value="Submit" onclick="displayValue()">
+
+        <script>
+            function displayValue() {
+                let radioButtons = document.getElementsByName("gender");
+                let selectedValue = "";
+    
+                for (let i = 0; i < radioButtons.length; i++) {
+                    if (radioButtons[i].checked) {
+                        selectedValue = radioButtons[i].value;
+                        break;
+                    }
+                }
+    
+                alert("Jenis kelamin yang dipilih adalah: " + selectedValue);
+            }
+        </script>
+    </body>
+</html>

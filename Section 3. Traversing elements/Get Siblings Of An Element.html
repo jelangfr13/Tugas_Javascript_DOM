@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Get Siblings Of An Element</title>
+    </head>
+    <body>
+        <p>List:</p>
+        <ul id="myList">
+            <li>Kopi</li>
+            <li>Teh</li>
+        </ul>
+        <p>Klik untuk mendapatkan first child node dari list.</p>
+        <button onclick="myFunction()">Click</button>
+        
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                var listItem = document.getElementById("myList").firstElementChild.nextSibling.nextSibling.innerHTML.trim();
+                document.getElementById("demo").innerHTML = listItem;
+            }
+        </script>
+    </body>
+</html>

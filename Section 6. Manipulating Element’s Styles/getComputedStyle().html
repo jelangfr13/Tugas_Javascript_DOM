@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>getComputedStyle()</title>
+        <style>
+            #box {
+              width: 200px;
+              height: 200px;
+              background-color: blue;
+            }
+          </style>
+    </head>
+
+    <body>
+        <div id="box"></div>
+
+        <script>
+          var elemenBox = document.getElementById("box");
+          var styleBox = window.getComputedStyle(elemenBox);
+          var lebarBox = styleBox.getPropertyValue("width");
+          var tinggiBox = styleBox.getPropertyValue("height");
+          var warnaBox = styleBox.getPropertyValue("background-color");
+      
+          alert("Lebar kotak: " + lebarBox);
+          alert("Tinggi kotak: " + tinggiBox);
+          alert("Warna kotak: " + warnaBox);
+        </script>
+    </body>
+</html>

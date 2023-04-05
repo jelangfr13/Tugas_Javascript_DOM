@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+
+    <body>
+        <button id="tombol">Klik di sini!</button>
+
+        <script>
+        var tombol = document.getElementById("tombol");
+
+        tombol.addEventListener("mouseover", function() {
+            tombol.style.backgroundColor = "red";
+        });
+
+        tombol.addEventListener("mouseout", function() {
+            tombol.style.backgroundColor = "";
+        });
+        </script>
+    </body>
+</html>
